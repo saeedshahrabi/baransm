@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/IRANSans.eot") format("embedded-opentype"),
+     url("../fonts/IRANSans.woff2") format("woff2"),
+     url("../fonts/IRANSans.woff") format("woff"), 
+     url("../fonts/IRANSans.ttf") format("truetype");
+}
+body{
+    font-family: IRANSans !important;
+}
+.rtl{
+    direction: rtl;
+    text-align: right;
+}
+.app-INPUT{ 
+    text-align: start;
+    label{
+        font-size: 13px;
+    }
+    input {
+    font-size: 13px;
+    outline: none;
+}
+}

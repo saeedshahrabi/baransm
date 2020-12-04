@@ -1,0 +1,114 @@
+.registeration {
+    background: #f0f4f3;
+    padding: 50px 0;
+    position: relative;
+    &:before{
+           position: absolute;
+           content: "";
+           left: 0;
+           top: 0;
+           background: url(/pictures/registeration/triangle.png);
+           width: 100%;
+           height: 100%;
+           background-repeat: no-repeat;
+           background-position: right;
+           background-size: 18%;
+           background-position-y: 0;
+    }
+    &:after{
+       position: absolute;
+       content: "";
+       left: 0;
+       top: 0;
+       background: url(/pictures/registeration/circle.png);
+       width: 100%;
+       height: 100%;
+       background-repeat: no-repeat;
+       background-position: -48px;
+       background-size: 23%;
+       background-position-y: 113%;
+    }
+}
+
+.registerationWrapper{
+   animation: registeration 2s ease-in-out infinite ;
+   box-shadow: 1px 1px 8px #737373;
+   border-radius: 6px; 
+   margin: 50px 0;
+   .desceriptionRegisteration{
+       width: 70%;
+       background-color: #fff;
+       border-radius: 6px 0 0 6px;
+       text-align: center;
+       padding: 50px 0;
+       
+       h2{
+           color: #3eaaa6;
+           font-weight: bolder;
+       }
+       p{
+           margin: 19px 0;
+
+       }
+       .social{
+           width: 44px;
+           height: 44px;
+           border-radius: 50%;
+           border: 1px solid #ccc;
+           display: inline-block;
+           line-height: 44px;
+           margin: 19px 3px 0
+       }
+       button{
+           border-radius: 33px;
+           background: #3eaaa6;
+           color: #fff;
+           border: 1px solid #3eaaa6;
+           padding: 12px 32px;
+           font-size: 15px;
+           outline: none;
+       }
+   }
+   .formRegisteration{
+       width: 30%;
+       background-color: #3eaaa6ed;
+       color: #fff;
+       text-align: center;
+       padding: 58px 0;
+       border-radius:0 6px 6px 0;
+       display: flex;
+       flex-flow: column;
+       align-items: center;
+       justify-content: center;
+       button{
+           border-radius: 33px;
+           padding: 12px 32px;
+           border: 1px solid #fff;
+           font-size: 15px;
+           background: transparent;
+           color: #fff;
+           outline: none;
+       }
+       h2{
+           font-size: 1.7rem;
+           margin-bottom: 18px;
+           font-weight: bold;
+       }
+       p{
+           font-size: 12px;
+           width: 52%;
+           margin: 22px auto;
+           line-height: 2;
+       }
+   }
+}
+
+.rtl {
+   .desceriptionRegisteration{
+   border-radius: 0 6px 6px 0;
+   }
+   .formRegisteration{
+       border-radius:6px 0 0 6px;
+   }
+}
+

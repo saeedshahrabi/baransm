@@ -1,0 +1,61 @@
+// @import "~bootstrap/scss/bootstrap.scss";
+
+.about {
+    padding: 23px 0;
+}
+.aboutWrapper {
+    margin-left: 70px;
+    margin-right: 27px;
+}
+.aboutTOCOntent p {
+    margin-top: 31px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.sectionToTitle span {
+    font-size: 14px;
+    color: #266252;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    &:before{
+        position: absolute;
+        content: "";
+        background: #5dc1a7;
+        height: 1px;
+        width: 60px;
+        left: -80px;
+        top: 7px;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        background: #5dc1a7;
+        height: 1px;
+        width: 60px;
+        left: -80px;
+        top: 11px;
+    }
+}
+
+
+.longArrow {
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.btnBaran {
+    background: #256252;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 19px 40px;
+    transition: all 0.3s ease 0s;
+    border-radius: 30px;
+    &:hover{
+            background: #deba65;
+    }
+}
