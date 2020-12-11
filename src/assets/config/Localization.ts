@@ -2,7 +2,6 @@
 import LocalizedStrings, { LocalizedStringsMethods } from 'react-localization';
 import { en } from './en';
 import { fa } from './fa';
-import { Setup } from '../../settings/setup';
 
 interface ILocalization extends LocalizedStringsMethods { 
   last_course: string;
@@ -22,4 +21,3 @@ export const Localization: ILocalization = new LocalizedStrings({
   en: en,
   // ar: ar
 });
-Localization.setLanguage(Setup.internationalization.flag);

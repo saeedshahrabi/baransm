@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from './layout';
-import styles from '../assets/styles/home.module.scss';
+import styles from '../src/assets/styles/home.module.scss';
+import { Container, Grid } from '@material-ui/core';
 
 interface IProps {
  
@@ -10,14 +11,14 @@ const Index: React.FunctionComponent<IProps> = () => {
   return (
       <Layout>
         <section className={styles.about}>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-6 col-lg-6">
+          <Container maxWidth="lg">
+            <Grid container spacing={4}>
+              <Grid item md={6} xs={12}>
                 <div className={`mb-30`}>
                   <img src="https:www.devsnews.com/wp/bazna/wp-content/uploads/2019/07/about-1.jpg" alt="About Me" />
                 </div>
-              </div>
-              <div className="col-xl-6 col-lg-6">
+              </Grid>
+              <Grid item md={6} xs={12}>
                 <div className={`${styles.aboutWrapper} mb-30`}>
                   <div className={`${styles.sectionToTitle} mb-35`}>
                     <span>About Me</span>
@@ -30,9 +31,9 @@ const Index: React.FunctionComponent<IProps> = () => {
                   </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
+              </Grid>
+            </Grid>
+          </Container>
         </section>
       </Layout>
   )

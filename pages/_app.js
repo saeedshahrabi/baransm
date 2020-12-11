@@ -1,11 +1,9 @@
-import './../assets/styles/style.scss'
-import { Provider } from 'react-redux';
-import { store } from './../redux/store/store';
+import '../src/assets/styles/style.scss'
 
 export default function MyApp({ Component, pageProps }) {
      return (
-          <Provider store={store}>
+          // <Provider store={store}>
                <Component {...pageProps} />
-          </Provider>
+          // </Provider>
      )
 }

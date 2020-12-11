@@ -1,13 +1,11 @@
 import { Formik } from 'formik';
 import React, { useState } from 'react';
-import { APP_FORM_CONTROL } from '../assets/_formik/FormControl/FormControl';
-import { FormControl } from '../assets/_formik/FormControl/FormControl';
 import styles from '../assets/styles/registration.module.scss';
 import Layout from './layout';
-import { Registeration } from '../services/signup.service';
 import * as Yup from 'yup'
-import { Localization } from '../assets/config/Localization';
-import { AppRegex } from '../assets/regex/regex';
+import { APP_FORM_CONTROL, FormControl } from '../src/assets/_formik/FormControl/FormControl';
+import { Localization } from '../src/assets/config/Localization';
+import { AppRegex } from '../src/assets/regex/regex';
 
 interface IProps {
 
@@ -19,7 +17,6 @@ enum Pagemode {
 }
 
 const Registration: React.FunctionComponent<IProps> = () => {
-    const _Registration = new Registeration()
 
     const [PageMode, setPageMode] = useState(Pagemode.signIn)
 
@@ -114,7 +111,7 @@ const Registration: React.FunctionComponent<IProps> = () => {
 
     const submitFormSignUp = async (value: any) => {
         try {
-            await _Registration.signup(value)
+            // await _Registration.signup(value)
             setPageMode(Pagemode.signIn)
         } catch (error) {
             console.log(error)
