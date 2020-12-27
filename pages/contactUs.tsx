@@ -1,15 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export interface IProps {
-  
-}
- 
+export interface IProps {}
+
 const ContactUs: React.FunctionComponent<IProps> = () => {
-  return ( 
-    <>
-    Hello ContactUs
-    </>
-   );
-}
- 
+  return <>Hello ContactUs</>;
+};
+
 export default ContactUs;
